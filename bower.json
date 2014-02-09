@@ -1,0 +1,16 @@
+{
+  "name": "angular-linkedin",
+  "version": "0.0.1",
+  "homepage": "https://github.com/marcelijanowski/angular-linkedin",
+  "authors": [
+    "Marceli Janowski <marceli@mjdesign.pl>"
+  ],
+  "description": "Bower package information for angular-linkedin",
+  "main": "bower.json",
+  "keywords": [
+    "linkedin",
+    "bower"
+  ],
+  "license": "MIT",
+  "private": true
+}
