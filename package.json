@@ -1,0 +1,25 @@
+{
+  "name": "angular-linkedin",
+  "version": "0.0.1",
+  "description": "Angular Linkedin module",
+  "main": "server.js",
+  "scripts": {
+    "test": "grunt unit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/marcelijanowski/angular-linkedin.git"
+  },
+  "keywords": [
+    "angular",
+    "linkedin",
+    "angular",
+    "module"
+  ],
+  "author": "Marceli Janowski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcelijanowski/angular-linkedin/issues"
+  },
+  "homepage": "https://github.com/marcelijanowski/angular-linkedin"
+}
