@@ -4,14 +4,12 @@ module.exports = function (grunt) {
 
   grunt.registerTask('default', 'run the server and watch for changes', [
     'jshint',
-    'jade:dev',
     'express',
     'watch'
   ]);
 
   grunt.registerTask('e2e', 'run the server and watch for changes', [
     'jshint',
-    'jscs',
     'exec:e2e'
   ]);
 
