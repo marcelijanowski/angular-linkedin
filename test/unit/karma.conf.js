@@ -17,7 +17,7 @@ module.exports = function(config) {
     files: [
       exclude('src/vendor/**/*.js'),
       exclude('src/js/**/*.js'),
-      exclude('test/unit/**/*-spec.js'),
+      exclude('test/unit/**/*.spec.js'),
       'test/unit/test-main.js'
     ],
     exclude: ['src/js/app.js'],
