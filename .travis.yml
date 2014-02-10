@@ -4,7 +4,6 @@ before_install:
 - npm install -g protractor
 install:
 - npm install -d
-- bower install
 - webdriver-manager update
 before_script:
 - export DISPLAY=:99.0
