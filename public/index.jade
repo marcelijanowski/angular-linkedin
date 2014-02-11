@@ -4,7 +4,12 @@ html(lang='en', data-ng-controller='appController')
     meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     link(rel='stylesheet', href='/assets/css/styles.css')
+    title(data-ng-bind='pageTitle') 
+    script(src='http://platform.linkedin.com/in.js') api_key: 77y39mevot3yqc
   body
     div#app
+      div(data-ng-include, data-src='headerPartial')
       div#view.row(data-ng-view)
+      div(data-ng-include, data-src='footerPartial')
+    script(type='in/login')
     script(src='/assets/vendor/requirejs/require.js', data-main='/assets/js/app')

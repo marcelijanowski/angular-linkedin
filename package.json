@@ -1,53 +1,62 @@
 {
+  "engines": {
+    "node": "0.10.x"
+  },
   "name": "angular-linkedin",
   "version": "0.0.1",
-  "description": "Angular Linkedin module",
+  "description": "Angular linkedin module to integrate with linkedin",
   "main": "server.js",
   "scripts": {
+    "start": "node server.js",
+    "run": "grunt",
     "test": "grunt unit",
-    "postscript": "bower install"
+    "postinstall": "bower install"
   },
   "repository": {
     "type": "git",
     "url": "git://github.com/marcelijanowski/angular-linkedin.git"
   },
   "keywords": [
-    "angular",
-    "linkedin",
-    "angular",
-    "module"
+    "angular-linkedin",
+    "angular"
   ],
   "author": "Marceli Janowski",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/marcelijanowski/angular-linkedin/issues"
   },
-  "homepage": "https://github.com/marcelijanowski/angular-linkedin",
-  "dependencies": {
-    "express": "3.4.5",
+   "dependencies": {
+    "bower" : "1.2.8",
+    "express": "3.4.7",
     "grunt": "0.4.2",
-    "grunt-contrib-clean": "0.5.0",
-    "grunt-contrib-compass": "0.6.0",
-    "grunt-contrib-copy": "0.4.1",
+    "grunt-angular-templates": "0.5.1",
+    "grunt-contrib-cssmin": "0.7.0",
     "grunt-contrib-jshint": "0.7.2",
     "grunt-contrib-requirejs": "0.4.1",
     "grunt-contrib-watch": "0.5.3",
-    "grunt-express-server": "0.4.5",
+    "grunt-exec": "0.4.3",
+    "grunt-express-server": "0.4.11",
     "grunt-jade": "0.4.0",
     "grunt-jscs-checker": "0.2.5",
-    "grunt-karma": "0.6.2",
-    "jshint-junit-reporter": "0.0.6",
-    "karma": "~0.10",
-    "karma-chrome-launcher": "0.1.1",
+    "grunt-karma": "0.7.2",
+    "jasmine-reporters": "latest",
+    "karma": "0.11.12",
+    "karma-chrome-launcher": "0.1.2",
     "karma-coverage": "0.1.4",
-    "karma-firefox-launcher": "0.1.1",
-    "karma-ie-launcher": "0.1.1",
-    "karma-jasmine": "0.1.3",
+    "karma-firefox-launcher": "0.1.3",
+    "karma-jasmine": "latest",
     "karma-junit-reporter": "0.2.1",
-    "karma-opera-launcher": "0.1.0",
-    "karma-safari-launcher": "0.1.1",
-    "lodash": "2.4.0",
+    "karma-requirejs": "0.2.1",
+    "marked": "0.3.0",
+    "protractor": "0.15.0",
     "request": "2.27.0",
-    "time-grunt": "0.2.3"
-  }
+    "time-grunt" : "0.1.2",
+    "wrench": "1.5.4"
+  },
+  "peerDependencies": {
+    "express": "3.4.7",
+    "grunt": "0.4.2",
+    "karma": "0.11.12"
+  },
+  "homepage": "https://github.com/marcelijanowski/angular-linkedin"
 }

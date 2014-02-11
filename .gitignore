@@ -1,5 +1,5 @@
-.DS_Store
 lib-cov
+.sass-cache
 *.seed
 *.log
 *.csv
@@ -8,11 +8,16 @@ lib-cov
 *.pid
 *.gz
 
+.DS_Store
+index.html
+public/assets/partial/**/*.html
+public/assets/img/*.png
+public/assets/vendor
+test/report
+
 pids
 logs
 results
 
 npm-debug.log
 node_modules
-src/js/vendor
-test/report

@@ -14,7 +14,7 @@ app.configure(function () {
     response.header('Access-Control-Allow-Headers', 'Content-Type, Authorization, Content-Length, X-Requested-With');
     return next();
   });
-  return app.use('/', express.static(process.env.PWD + '/src'));
+  return app.use('/', express.static(process.env.PWD + '/public'));
 });
 
 app.options('*', function (request, response, next) {
@@ -22,7 +22,7 @@ app.options('*', function (request, response, next) {
 });
 
 app.all('*', function (request, response, next) {
-  return response.sendfile(process.env.PWD + '/src/index.html');
+  return response.sendfile(process.env.PWD + '/public/index.html');
 });
 
 app.listen(port, function () {

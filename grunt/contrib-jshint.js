@@ -1,12 +1,12 @@
 module.exports = function (grunt) {
   grunt.config('jshint', {
     all: [
-      'assets/js/*.js',
-      'assets/js/**/*.js',
+      'public/assets/js/*.js',
+      'public/assets/js/**/*.js',
       'grunt/*.js',
-      'test/*.js',
-      'test/**/*-spec.js',
-      'test/**/*-step.js',
+      'tests/*.js',
+      'tests/**/*-spec.js',
+      'tests/**/*-step.js',
       'Gruntfile.js',
       'server.js'
     ],

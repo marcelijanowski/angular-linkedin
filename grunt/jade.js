@@ -3,13 +3,13 @@ module.exports = function (grunt) {
     dev: {
       options: {
         compileDebug: true,
-        basePath: './src/',
+        basePath: './public/',
         extension: '.html',
         client: false,
         pretty: true
       },
       files: {
-        './src': ['<%= watch.jade.files %>']
+        './public': ['<%= watch.jade.files %>']
       }
     }
   });

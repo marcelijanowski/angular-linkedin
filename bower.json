@@ -1,26 +1,15 @@
 {
-  "name": "angular-linkedin",
   "version": "0.0.1",
-  "homepage": "https://github.com/marcelijanowski/angular-linkedin",
-  "authors": [
-    "Marceli Janowski <marceli@mjdesign.pl>"
-  ],
-  "description": "Bower package information for angular-linkedin",
-  "main": "bower.json",
-  "keywords": [
-    "linkedin",
-    "bower"
-  ],
-  "license": "MIT",
-  "private": true,
+  "name": "angular-linked",
   "dependencies": {
-    "angular": "1.2.5"
-  },
-  "devDependencies": {
     "angular": "1.2.5",
     "angular-mocks": "1.2.5",
     "angular-resource": "1.2.5",
     "angular-route": "1.2.5",
+    "angular-ui": "latest",
+    "lodash": "2.4.1",
+    "normalize-css": "2.1.3",
+    "pure": "0.3.0",
     "requirejs": "2.1.9"
   }
 }

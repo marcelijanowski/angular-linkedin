@@ -16,6 +16,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('unit', 'run unit tests', [
     'jshint',
+    'jscs',
     'karma:unit'
   ]);
 };

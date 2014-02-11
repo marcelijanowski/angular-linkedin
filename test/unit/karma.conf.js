@@ -15,18 +15,18 @@ module.exports = function(config) {
     basePath: '../../',
     browsers: browsers,
     files: [
-      exclude('src/js/vendor/**/*.js'),
-      exclude('src/js/**/*.js'),
-      exclude('test/unit/**/*.spec.js'),
-      'test/unit/test-main.js'
+      exclude('public/assets/vendor/**/*.js'),
+      exclude('public/assets/js/**/*.js'),
+      exclude('tests/unit/**/*-spec.js'),
+      'tests/unit/test-main.js'
     ],
-    exclude: ['src/js/app.js'],
+    exclude: ['public/assets/js/app.js'],
     frameworks: [
       'jasmine',
       'requirejs'
     ],
     preprocessors: {
-      'src/js/**/*.js': 'coverage'
+      'public/assets/js/**/*.js': 'coverage'
     },
     reporters: [
       'coverage',
@@ -34,7 +34,7 @@ module.exports = function(config) {
       'progress'
     ],
     coverageReporter: {
-      dir: 'test/report/coverage',
+      dir: 'tests/report/coverage',
       reporters: [
         {
           type: 'html'
@@ -44,7 +44,7 @@ module.exports = function(config) {
       ]
     },
     junitReporter: {
-      outputFile: 'test/report/karma-unit.xml'
+      outputFile: 'tests/report/karma-unit.xml'
     },
     logLevel: config.LOG_INFO
   });
