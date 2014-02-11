@@ -11,7 +11,17 @@ module.exports = function (grunt) {
       options: {
         livereload: true
       }
-    }
+    },
+    jade: {
+      files: [
+        'src/*.jade',
+        'src/assets/partial/**/*.jade'
+      ],
+      tasks: ['jade'],
+      options: {
+        livereload: true
+      }
+    },
   });
   grunt.loadNpmTasks('grunt-contrib-watch');
 };

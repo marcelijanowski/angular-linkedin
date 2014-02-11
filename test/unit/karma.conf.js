@@ -15,7 +15,7 @@ module.exports = function(config) {
     basePath: '../../',
     browsers: browsers,
     files: [
-      exclude('src/vendor/**/*.js'),
+      exclude('src/js/vendor/**/*.js'),
       exclude('src/js/**/*.js'),
       exclude('test/unit/**/*.spec.js'),
       'test/unit/test-main.js'
